@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Day2 {
 
-    public List<String> readFisherito() throws FileNotFoundException{
+    public List<String> readFisherito() throws FileNotFoundException {
         String item = "";
 
         Scanner scan = new Scanner(new File("input/day2Input.txt"));

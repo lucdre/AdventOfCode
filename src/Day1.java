@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Day1 {
 
-    public List<Integer> readFisherito() throws FileNotFoundException{
+    public List<Integer> readFisherito() throws FileNotFoundException {
         int item = 0;
 
         Scanner scan = new Scanner(new File("input/day1Input.txt"));
@@ -21,7 +21,7 @@ public class Day1 {
         return data;
     }
 
-    public int getIncreases1(List<Integer> data) {
+    public int part1(List<Integer> data) {
         int start = -1;
         int increases = -1;
 
@@ -35,7 +35,7 @@ public class Day1 {
         return increases;
     }
 
-    public int getIncreases2(List<Integer> data) {
+    public int part2(List<Integer> data) {
         int comparison = -1;
         int sum = 0;
         int increases = -1;
@@ -73,7 +73,7 @@ public class Day1 {
             e.printStackTrace();
         }
 
-        System.out.println("Result of part 1 is: " + day1.getIncreases1(data));
-        System.out.println("Result of part 2 is: " + day1.getIncreases2(data));
+        System.out.println("Result of part 1 is: " + day1.part1(data));
+        System.out.println("Result of part 2 is: " + day1.part2(data));
     }
 }
